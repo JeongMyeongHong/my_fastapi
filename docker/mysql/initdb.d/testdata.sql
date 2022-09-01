@@ -1,3 +1,3 @@
-INSERT INTO user (name, age) VALUES ("hong", 15);
-INSERT INTO user (name, age) VALUES ("kim", 18);
-INSERT INTO user (name, age) VALUES ("lee", 20);
+insert into user (id, password, name, age) values ('hong', 'pass', '홍길동', 20);
+insert into user (id, password, name, age) values ('james', 'pass', 'James', 25);
+insert into user (id, password, name, age) values ('ann', 'pass', 'Ann', 22);

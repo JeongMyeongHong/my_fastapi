@@ -1,6 +1,6 @@
-CREATE TABLE user (
-    id INT NOT NULL AUTO_INCREMENT,
-    name VARCHAR(30) NOT NULL,
-    age INT,
-    PRIMARY KEY (id)
-);
+create table user(
+    id varchar(10) primary key,
+    password varchar(10),
+    name varchar(12),
+    age int
+)

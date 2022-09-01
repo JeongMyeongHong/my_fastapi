@@ -1,14 +1,13 @@
 version: "3.3"
 
 services:
-  # MySQL
   db:
     container_name: "db"
     build: ./docker/mysql
     restart: always
     tty: true
     environment:
-      MYSQL_DATABASE: sample_db
+      MYSQL_DATABASE: mydb
       MYSQL_USER: user
       MYSQL_PASSWORD: password 
       MYSQL_ROOT_PASSWORD: password 
@@ -30,7 +29,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./code:/usr/src/server
+      - ./app:/usr/src/server
     networks:
       - local-net
 
